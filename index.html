@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRD CODE EDITOR</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <span>html css js editor</span>
+            <div class="clear">
+                <button onclick="cleartxt()">
+                    clear
+                </button>
+            </div>
+        </div>
+        <div class="field">
+            <div class="left">
+                <!-- ================html======== -->
+                <div class="box box_1">
+                    <label>
+                        <i class="fas fa-html-5"></i>
+                        <span>HTML</span>
+
+                        <div class="file-att">
+                            <div class="file-name">
+                                <input type="text" placeholder="fileName">
+                            </div>
+                        </div>
+                        <select>
+                            <option value="text/plain">Text file(.txt)</option>
+                            <option value="text/html">Html file(.html)</option>
+                            <option value="application/ms-word">Doc file(.doc)</option>
+                        </select>
+                        <div class="download_btn">
+                            <button class="download">
+                                download file
+                            </button>
+                        </div>
+                    </label>
+                    <textarea placeholder="<h1>hello wolrd</h1>" id="html_code" onkeyup="run()"></textarea>
+                </div>
+                <!-- ===========css====== -->
+                <div class="box box_2">
+                    <label>
+                        <i class="fas fa-css"></i>
+                        <span>css</span>
+
+                        <div class="file-att">
+                            <div class="file-name">
+                                <input type="text" placeholder="fileName">
+                            </div>
+                        </div>
+                        <select>
+                            <option value="text/plain">Text file(.txt)</option>
+                            <option value="text/css">css file(.css)</option>
+                            <option value="application/ms-word">Doc file(.doc)</option>
+                        </select>
+                        <div class="download_btn">
+                            <button class="download">
+                                download file
+                            </button>
+                        </div>
+                    </label>
+                    <textarea placeholder="*{
+margin:0%
+padding:0%
+}" id="css-code" onkeyup="run()" ></textarea>
+                </div>
+                <!-- =========javascript===== -->
+                <div class="box box_3">
+                    <label>
+                        <i class="fas fa-html-5"></i>
+                        <span>javascript</span>
+
+                        <div class="file-att">
+                            <div class="file-name">
+                                <input type="text" placeholder="fileName">
+                            </div>
+                        </div>
+                        <select>
+                            <option value="text/plain">Text file(.txt)</option>
+                            <option value="text/js">js file(.js)</option>
+                            <option value="application/ms-word">Doc file(.doc)</option>
+                        </select>
+                        <div class="download_btn">
+                            <button class="download">
+                                download file
+                            </button>
+                        </div>
+                    </label>
+                    <textarea placeholder="javascript" id="javascript-code" onkeyup="run()"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <!-- ==============script============ -->
+    <script src="hcj.js"></script>
+</body>
+</html>
